@@ -1,0 +1,15 @@
+bool detected
+string robot_namespace
+float64 x
+float64 y
+float64 z
+float64 u
+float64 v
+float64 confidence
+float64[4] xyxy
+float64 x_min
+float64 y_min
+float64 x_max
+float64 y_max
+float64 image_width
+std_msgs/Header header
