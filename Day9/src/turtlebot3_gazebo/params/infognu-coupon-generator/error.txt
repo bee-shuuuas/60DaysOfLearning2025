@@ -1,0 +1,544 @@
+biswash@biswash-pc:~/up_work/final_output$ ros2 launch turtlebot3_gazebo multi_nav_launch.py 
+[INFO] [launch]: All log files can be found below /home/biswash/.ros/log/2025-05-25-12-59-38-477951-biswash-pc-533197
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [controller_server-1]: process started with pid [533198]
+[INFO] [smoother_server-2]: process started with pid [533200]
+[INFO] [planner_server-3]: process started with pid [533202]
+[INFO] [behavior_server-4]: process started with pid [533204]
+[INFO] [bt_navigator-5]: process started with pid [533206]
+[INFO] [waypoint_follower-6]: process started with pid [533208]
+[INFO] [velocity_smoother-7]: process started with pid [533210]
+[INFO] [lifecycle_manager-8]: process started with pid [533212]
+[velocity_smoother-7] [INFO] [1748157279.165476661] [tb3_0.velocity_smoother]: 
+[velocity_smoother-7] 	velocity_smoother lifecycle node launched. 
+[velocity_smoother-7] 	Waiting on external lifecycle transitions to activate
+[velocity_smoother-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[smoother_server-2] [INFO] [1748157279.171919058] [tb3_0.smoother_server]: 
+[smoother_server-2] 	smoother_server lifecycle node launched. 
+[smoother_server-2] 	Waiting on external lifecycle transitions to activate
+[smoother_server-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[behavior_server-4] [INFO] [1748157279.176105058] [tb3_0.behavior_server]: 
+[behavior_server-4] 	behavior_server lifecycle node launched. 
+[behavior_server-4] 	Waiting on external lifecycle transitions to activate
+[behavior_server-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-3] [INFO] [1748157279.187054381] [tb3_0.planner_server]: 
+[planner_server-3] 	planner_server lifecycle node launched. 
+[planner_server-3] 	Waiting on external lifecycle transitions to activate
+[planner_server-3] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[smoother_server-2] [INFO] [1748157279.188674723] [tb3_0.smoother_server]: Creating smoother server
+[waypoint_follower-6] [INFO] [1748157279.207094452] [tb3_0.waypoint_follower]: 
+[waypoint_follower-6] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-6] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-3] [INFO] [1748157279.211200204] [tb3_0.planner_server]: Creating
+[bt_navigator-5] [INFO] [1748157279.211515821] [tb3_0.bt_navigator]: 
+[bt_navigator-5] 	bt_navigator lifecycle node launched. 
+[bt_navigator-5] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-5] [INFO] [1748157279.211677576] [tb3_0.bt_navigator]: Creating
+[waypoint_follower-6] [INFO] [1748157279.216431744] [tb3_0.waypoint_follower]: Creating
+[controller_server-1] [INFO] [1748157279.222420166] [tb3_0.controller_server]: 
+[controller_server-1] 	controller_server lifecycle node launched. 
+[controller_server-1] 	Waiting on external lifecycle transitions to activate
+[controller_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[lifecycle_manager-8] [INFO] [1748157279.266206562] [tb3_0.lifecycle_manager_navigation]: Creating
+[controller_server-1] [INFO] [1748157279.291727301] [tb3_0.controller_server]: Creating controller server
+[lifecycle_manager-8] [INFO] [1748157279.300391033] [tb3_0.lifecycle_manager_navigation]: Creating and initializing lifecycle service clients
+[controller_server-1] [INFO] [1748157279.487981683] [tb3_0.local_costmap.local_costmap]: 
+[controller_server-1] 	local_costmap lifecycle node launched. 
+[controller_server-1] 	Waiting on external lifecycle transitions to activate
+[controller_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-1] [ERROR] [1748157279.495243331] [pluginlib.ClassLoader]: Skipped loading plugin with error: XML Document '/home/biswash/navigation2_tutorials/install/camera_costmap_plugin/share/camera_costmap_plugin/camera_costmap_plugin.xml' has no Root Element. This likely means the XML is malformed or missing..
+[controller_server-1] [INFO] [1748157279.497455307] [tb3_0.local_costmap.local_costmap]: Creating Costmap
+[planner_server-3] [INFO] [1748157279.574332514] [tb3_0.global_costmap.global_costmap]: 
+[planner_server-3] 	global_costmap lifecycle node launched. 
+[planner_server-3] 	Waiting on external lifecycle transitions to activate
+[planner_server-3] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-3] [ERROR] [1748157279.579654500] [pluginlib.ClassLoader]: Skipped loading plugin with error: XML Document '/home/biswash/navigation2_tutorials/install/camera_costmap_plugin/share/camera_costmap_plugin/camera_costmap_plugin.xml' has no Root Element. This likely means the XML is malformed or missing..
+[planner_server-3] [INFO] [1748157279.580494354] [tb3_0.global_costmap.global_costmap]: Creating Costmap
+[lifecycle_manager-8] [INFO] [1748157279.856858176] [tb3_0.lifecycle_manager_navigation]: Starting managed nodes bringup...
+[lifecycle_manager-8] [INFO] [1748157279.856924526] [tb3_0.lifecycle_manager_navigation]: Configuring controller_server
+[controller_server-1] [INFO] [1748157279.857941780] [tb3_0.controller_server]: Configuring controller interface
+[controller_server-1] [INFO] [1748157279.858861743] [tb3_0.controller_server]: getting goal checker plugins..
+[controller_server-1] [INFO] [1748157279.859116947] [tb3_0.controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-1] [INFO] [1748157279.859178269] [tb3_0.local_costmap.local_costmap]: Configuring
+[controller_server-1] [INFO] [1748157279.880293842] [tb3_0.local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[controller_server-1] [INFO] [1748157279.892555153] [tb3_0.local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-1] [INFO] [1748157279.915692592] [tb3_0.local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[controller_server-1] [INFO] [1748157279.915759362] [tb3_0.local_costmap.local_costmap]: Using plugin "voxel_layer"
+[controller_server-1] [INFO] [1748157279.922045940] [tb3_0.local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-1] [INFO] [1748157279.943801688] [tb3_0.local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[controller_server-1] [INFO] [1748157279.944027838] [tb3_0.local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-1] [INFO] [1748157279.946769150] [tb3_0.local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-1] [INFO] [1748157280.002457658] [tb3_0.controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-1] [INFO] [1748157280.003767900] [tb3_0.controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-1] [INFO] [1748157280.004340677] [tb3_0.controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-1] [INFO] [1748157280.007666639] [tb3_0.controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[controller_server-1] [INFO] [1748157280.009012640] [tb3_0.controller_server]: Setting transform_tolerance to 0.200000
+[controller_server-1] [INFO] [1748157280.026008703] [tb3_0.controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[controller_server-1] [INFO] [1748157280.026968337] [tb3_0.controller_server]: Critic plugin initialized
+[controller_server-1] [INFO] [1748157280.027253084] [tb3_0.controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[controller_server-1] [INFO] [1748157280.028337177] [tb3_0.controller_server]: Critic plugin initialized
+[controller_server-1] [INFO] [1748157280.028722078] [tb3_0.controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[controller_server-1] [INFO] [1748157280.029455842] [tb3_0.controller_server]: Critic plugin initialized
+[controller_server-1] [INFO] [1748157280.029822095] [tb3_0.controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[controller_server-1] [INFO] [1748157280.031022615] [tb3_0.controller_server]: Critic plugin initialized
+[controller_server-1] [INFO] [1748157280.031494889] [tb3_0.controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[controller_server-1] [INFO] [1748157280.032631014] [tb3_0.controller_server]: Critic plugin initialized
+[controller_server-1] [INFO] [1748157280.033021572] [tb3_0.controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[controller_server-1] [INFO] [1748157280.033789210] [tb3_0.controller_server]: Critic plugin initialized
+[controller_server-1] [INFO] [1748157280.034165590] [tb3_0.controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[controller_server-1] [INFO] [1748157280.034950129] [tb3_0.controller_server]: Critic plugin initialized
+[controller_server-1] [INFO] [1748157280.035090582] [tb3_0.controller_server]: Controller Server has FollowPath  controllers available.
+[lifecycle_manager-8] [INFO] [1748157280.048739311] [tb3_0.lifecycle_manager_navigation]: Configuring smoother_server
+[smoother_server-2] [INFO] [1748157280.049135108] [tb3_0.smoother_server]: Configuring smoother server
+[smoother_server-2] [INFO] [1748157280.063893073] [tb3_0.smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[smoother_server-2] [INFO] [1748157280.064832383] [tb3_0.smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[lifecycle_manager-8] [INFO] [1748157280.075323749] [tb3_0.lifecycle_manager_navigation]: Configuring planner_server
+[planner_server-3] [INFO] [1748157280.075773674] [tb3_0.planner_server]: Configuring
+[planner_server-3] [INFO] [1748157280.075843307] [tb3_0.global_costmap.global_costmap]: Configuring
+[planner_server-3] [INFO] [1748157280.085707489] [tb3_0.global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-3] [INFO] [1748157280.089630673] [tb3_0.global_costmap.global_costmap]: Subscribing to the map topic (/tb3_0/map) with transient local durability
+[planner_server-3] [INFO] [1748157280.092441338] [tb3_0.global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-3] [INFO] [1748157280.092556438] [tb3_0.global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-3] [INFO] [1748157280.094810041] [tb3_0.global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-3] [INFO] [1748157280.102753001] [tb3_0.global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-3] [INFO] [1748157280.102800982] [tb3_0.global_costmap.global_costmap]: Using plugin "voxel_layer"
+[planner_server-3] [INFO] [1748157280.104143492] [tb3_0.global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-3] [INFO] [1748157280.115991197] [tb3_0.global_costmap.global_costmap]: Initialized plugin "voxel_layer"
+[planner_server-3] [INFO] [1748157280.116051540] [tb3_0.global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-3] [INFO] [1748157280.117187805] [tb3_0.global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-3] [INFO] [1748157280.133419793] [tb3_0.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 102 X 108 at 0.050000 m/pix
+[planner_server-3] [INFO] [1748157280.133889902] [tb3_0.planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[planner_server-3] [INFO] [1748157280.133927966] [tb3_0.planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-3] [INFO] [1748157280.135330261] [tb3_0.planner_server]: Planner Server has GridBased  planners available.
+[lifecycle_manager-8] [INFO] [1748157280.154577412] [tb3_0.lifecycle_manager_navigation]: Configuring behavior_server
+[behavior_server-4] [INFO] [1748157280.154916706] [tb3_0.behavior_server]: Configuring
+[behavior_server-4] [INFO] [1748157280.167884123] [tb3_0.behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[behavior_server-4] [INFO] [1748157280.169084993] [tb3_0.behavior_server]: Configuring spin
+[behavior_server-4] [INFO] [1748157280.179968664] [tb3_0.behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[behavior_server-4] [INFO] [1748157280.181007429] [tb3_0.behavior_server]: Configuring backup
+[behavior_server-4] [INFO] [1748157280.191311897] [tb3_0.behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[behavior_server-4] [INFO] [1748157280.192636457] [tb3_0.behavior_server]: Configuring drive_on_heading
+[behavior_server-4] [INFO] [1748157280.202735101] [tb3_0.behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[behavior_server-4] [INFO] [1748157280.203962091] [tb3_0.behavior_server]: Configuring wait
+[lifecycle_manager-8] [INFO] [1748157280.213399607] [tb3_0.lifecycle_manager_navigation]: Configuring bt_navigator
+[bt_navigator-5] [INFO] [1748157280.213782482] [tb3_0.bt_navigator]: Configuring
+[lifecycle_manager-8] [INFO] [1748157280.323280112] [tb3_0.lifecycle_manager_navigation]: Configuring waypoint_follower
+[waypoint_follower-6] [INFO] [1748157280.323571983] [tb3_0.waypoint_follower]: Configuring
+[waypoint_follower-6] [INFO] [1748157280.344502335] [tb3_0.waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[lifecycle_manager-8] [INFO] [1748157280.346055140] [tb3_0.lifecycle_manager_navigation]: Configuring velocity_smoother
+[velocity_smoother-7] [INFO] [1748157280.346592018] [tb3_0.velocity_smoother]: Configuring velocity smoother
+[lifecycle_manager-8] [INFO] [1748157280.355310157] [tb3_0.lifecycle_manager_navigation]: Activating controller_server
+[controller_server-1] [INFO] [1748157280.355681369] [tb3_0.controller_server]: Activating
+[controller_server-1] [INFO] [1748157280.355743878] [tb3_0.local_costmap.local_costmap]: Activating
+[controller_server-1] [INFO] [1748157280.355762037] [tb3_0.local_costmap.local_costmap]: Checking transform
+[controller_server-1] [INFO] [1748157280.355795352] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157280.855860903] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157281.355888534] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157281.855870070] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157282.355866557] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157282.855871986] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157283.355877698] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[INFO] [controller_server-9]: process started with pid [533327]
+[INFO] [smoother_server-10]: process started with pid [533329]
+[INFO] [planner_server-11]: process started with pid [533331]
+[INFO] [behavior_server-12]: process started with pid [533333]
+[INFO] [bt_navigator-13]: process started with pid [533335]
+[INFO] [waypoint_follower-14]: process started with pid [533337]
+[INFO] [velocity_smoother-15]: process started with pid [533339]
+[INFO] [lifecycle_manager-16]: process started with pid [533341]
+[controller_server-1] [INFO] [1748157283.855945572] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157283.861060965] [tb3_1.controller_server]: 
+[controller_server-9] 	controller_server lifecycle node launched. 
+[controller_server-9] 	Waiting on external lifecycle transitions to activate
+[controller_server-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-11] [INFO] [1748157283.866146675] [tb3_1.planner_server]: 
+[planner_server-11] 	planner_server lifecycle node launched. 
+[planner_server-11] 	Waiting on external lifecycle transitions to activate
+[planner_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-11] [INFO] [1748157283.884869660] [tb3_1.planner_server]: Creating
+[waypoint_follower-14] [INFO] [1748157283.886669707] [tb3_1.waypoint_follower]: 
+[waypoint_follower-14] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-14] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-14] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-14] [INFO] [1748157283.894423743] [tb3_1.waypoint_follower]: Creating
+[controller_server-9] [INFO] [1748157283.932302597] [tb3_1.controller_server]: Creating controller server
+[smoother_server-10] [INFO] [1748157283.953234486] [tb3_1.smoother_server]: 
+[smoother_server-10] 	smoother_server lifecycle node launched. 
+[smoother_server-10] 	Waiting on external lifecycle transitions to activate
+[smoother_server-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[velocity_smoother-15] [INFO] [1748157283.979607792] [tb3_1.velocity_smoother]: 
+[velocity_smoother-15] 	velocity_smoother lifecycle node launched. 
+[velocity_smoother-15] 	Waiting on external lifecycle transitions to activate
+[velocity_smoother-15] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[smoother_server-10] [INFO] [1748157283.994976948] [tb3_1.smoother_server]: Creating smoother server
+[behavior_server-12] [INFO] [1748157283.998915218] [tb3_1.behavior_server]: 
+[behavior_server-12] 	behavior_server lifecycle node launched. 
+[behavior_server-12] 	Waiting on external lifecycle transitions to activate
+[behavior_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[lifecycle_manager-16] [INFO] [1748157284.009314672] [tb3_1.lifecycle_manager_navigation]: Creating
+[bt_navigator-13] [INFO] [1748157284.030684962] [tb3_1.bt_navigator]: 
+[bt_navigator-13] 	bt_navigator lifecycle node launched. 
+[bt_navigator-13] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-13] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-13] [INFO] [1748157284.030856076] [tb3_1.bt_navigator]: Creating
+[lifecycle_manager-16] [INFO] [1748157284.049389579] [tb3_1.lifecycle_manager_navigation]: Creating and initializing lifecycle service clients
+[controller_server-1] [INFO] [1748157284.357442635] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157284.857084197] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[planner_server-11] [INFO] [1748157284.906228690] [tb3_1.global_costmap.global_costmap]: 
+[planner_server-11] 	global_costmap lifecycle node launched. 
+[planner_server-11] 	Waiting on external lifecycle transitions to activate
+[planner_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-11] [ERROR] [1748157284.919511656] [pluginlib.ClassLoader]: Skipped loading plugin with error: XML Document '/home/biswash/navigation2_tutorials/install/camera_costmap_plugin/share/camera_costmap_plugin/camera_costmap_plugin.xml' has no Root Element. This likely means the XML is malformed or missing..
+[planner_server-11] [INFO] [1748157284.920426730] [tb3_1.global_costmap.global_costmap]: Creating Costmap
+[controller_server-9] [INFO] [1748157285.004617412] [tb3_1.local_costmap.local_costmap]: 
+[controller_server-9] 	local_costmap lifecycle node launched. 
+[controller_server-9] 	Waiting on external lifecycle transitions to activate
+[controller_server-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[lifecycle_manager-16] [INFO] [1748157285.006585500] [tb3_1.lifecycle_manager_navigation]: Starting managed nodes bringup...
+[lifecycle_manager-16] [INFO] [1748157285.006658974] [tb3_1.lifecycle_manager_navigation]: Configuring controller_server
+[controller_server-9] [ERROR] [1748157285.016345129] [pluginlib.ClassLoader]: Skipped loading plugin with error: XML Document '/home/biswash/navigation2_tutorials/install/camera_costmap_plugin/share/camera_costmap_plugin/camera_costmap_plugin.xml' has no Root Element. This likely means the XML is malformed or missing..
+[controller_server-9] [INFO] [1748157285.017266280] [tb3_1.local_costmap.local_costmap]: Creating Costmap
+[controller_server-9] [INFO] [1748157285.032097580] [tb3_1.controller_server]: Configuring controller interface
+[controller_server-9] [INFO] [1748157285.032536400] [tb3_1.controller_server]: getting goal checker plugins..
+[controller_server-9] [INFO] [1748157285.032805363] [tb3_1.controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-9] [INFO] [1748157285.032872900] [tb3_1.local_costmap.local_costmap]: Configuring
+[controller_server-9] [INFO] [1748157285.110153871] [tb3_1.local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[controller_server-9] [INFO] [1748157285.121169894] [tb3_1.local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-9] [INFO] [1748157285.139349716] [tb3_1.local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[controller_server-9] [INFO] [1748157285.139415926] [tb3_1.local_costmap.local_costmap]: Using plugin "voxel_layer"
+[controller_server-9] [INFO] [1748157285.146927540] [tb3_1.local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-9] [INFO] [1748157285.189601350] [tb3_1.local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[controller_server-9] [INFO] [1748157285.189670634] [tb3_1.local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-9] [INFO] [1748157285.202816918] [tb3_1.local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-9] [INFO] [1748157285.276706624] [tb3_1.controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-9] [INFO] [1748157285.282509475] [tb3_1.controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-9] [INFO] [1748157285.289346412] [tb3_1.controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-9] [INFO] [1748157285.294806477] [tb3_1.controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[controller_server-9] [INFO] [1748157285.318521374] [tb3_1.controller_server]: Setting transform_tolerance to 0.200000
+[controller_server-1] [INFO] [1748157285.355858881] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157285.359869507] [tb3_1.controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[controller_server-9] [INFO] [1748157285.362459122] [tb3_1.controller_server]: Critic plugin initialized
+[controller_server-9] [INFO] [1748157285.363685204] [tb3_1.controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[controller_server-9] [INFO] [1748157285.367092951] [tb3_1.controller_server]: Critic plugin initialized
+[controller_server-9] [INFO] [1748157285.367349133] [tb3_1.controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[controller_server-9] [INFO] [1748157285.367716294] [tb3_1.controller_server]: Critic plugin initialized
+[controller_server-9] [INFO] [1748157285.367931269] [tb3_1.controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[controller_server-9] [INFO] [1748157285.371836085] [tb3_1.controller_server]: Critic plugin initialized
+[controller_server-9] [INFO] [1748157285.372294599] [tb3_1.controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[controller_server-9] [INFO] [1748157285.373046592] [tb3_1.controller_server]: Critic plugin initialized
+[controller_server-9] [INFO] [1748157285.373338673] [tb3_1.controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[controller_server-9] [INFO] [1748157285.373827709] [tb3_1.controller_server]: Critic plugin initialized
+[controller_server-9] [INFO] [1748157285.374022848] [tb3_1.controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[controller_server-9] [INFO] [1748157285.374483598] [tb3_1.controller_server]: Critic plugin initialized
+[controller_server-9] [INFO] [1748157285.374593181] [tb3_1.controller_server]: Controller Server has FollowPath  controllers available.
+[lifecycle_manager-16] [INFO] [1748157285.426258006] [tb3_1.lifecycle_manager_navigation]: Configuring smoother_server
+[smoother_server-10] [INFO] [1748157285.428495405] [tb3_1.smoother_server]: Configuring smoother server
+[smoother_server-10] [INFO] [1748157285.472579891] [tb3_1.smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[smoother_server-10] [INFO] [1748157285.473656022] [tb3_1.smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[lifecycle_manager-16] [INFO] [1748157285.510388834] [tb3_1.lifecycle_manager_navigation]: Configuring planner_server
+[planner_server-11] [INFO] [1748157285.510863762] [tb3_1.planner_server]: Configuring
+[planner_server-11] [INFO] [1748157285.510922150] [tb3_1.global_costmap.global_costmap]: Configuring
+[planner_server-11] [INFO] [1748157285.535450222] [tb3_1.global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-11] [INFO] [1748157285.550723205] [tb3_1.global_costmap.global_costmap]: Subscribing to the map topic (/tb3_1/map) with transient local durability
+[planner_server-11] [INFO] [1748157285.560233008] [tb3_1.global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-11] [INFO] [1748157285.560364731] [tb3_1.global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-11] [INFO] [1748157285.564943316] [tb3_1.global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-11] [INFO] [1748157285.578820849] [tb3_1.global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-11] [INFO] [1748157285.578911505] [tb3_1.global_costmap.global_costmap]: Using plugin "voxel_layer"
+[planner_server-11] [INFO] [1748157285.580103294] [tb3_1.global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-11] [INFO] [1748157285.596879984] [tb3_1.global_costmap.global_costmap]: Initialized plugin "voxel_layer"
+[planner_server-11] [INFO] [1748157285.596966658] [tb3_1.global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-11] [INFO] [1748157285.598762025] [tb3_1.global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-11] [INFO] [1748157285.618943389] [tb3_1.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 111 X 107 at 0.050000 m/pix
+[planner_server-11] [INFO] [1748157285.619403790] [tb3_1.planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[planner_server-11] [INFO] [1748157285.619441854] [tb3_1.planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-11] [INFO] [1748157285.620530067] [tb3_1.planner_server]: Planner Server has GridBased  planners available.
+[lifecycle_manager-16] [INFO] [1748157285.645927327] [tb3_1.lifecycle_manager_navigation]: Configuring behavior_server
+[behavior_server-12] [INFO] [1748157285.646304196] [tb3_1.behavior_server]: Configuring
+[behavior_server-12] [INFO] [1748157285.661855362] [tb3_1.behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[behavior_server-12] [INFO] [1748157285.662921855] [tb3_1.behavior_server]: Configuring spin
+[behavior_server-12] [INFO] [1748157285.677054732] [tb3_1.behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[behavior_server-12] [INFO] [1748157285.678083579] [tb3_1.behavior_server]: Configuring backup
+[behavior_server-12] [INFO] [1748157285.691736919] [tb3_1.behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[behavior_server-12] [INFO] [1748157285.693067067] [tb3_1.behavior_server]: Configuring drive_on_heading
+[behavior_server-12] [INFO] [1748157285.706890053] [tb3_1.behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[behavior_server-12] [INFO] [1748157285.708000477] [tb3_1.behavior_server]: Configuring wait
+[lifecycle_manager-16] [INFO] [1748157285.719612395] [tb3_1.lifecycle_manager_navigation]: Configuring bt_navigator
+[bt_navigator-13] [INFO] [1748157285.719999670] [tb3_1.bt_navigator]: Configuring
+[controller_server-1] [INFO] [1748157285.855860416] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[lifecycle_manager-16] [INFO] [1748157286.008446797] [tb3_1.lifecycle_manager_navigation]: Configuring waypoint_follower
+[waypoint_follower-14] [INFO] [1748157286.008862638] [tb3_1.waypoint_follower]: Configuring
+[waypoint_follower-14] [INFO] [1748157286.044813845] [tb3_1.waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[lifecycle_manager-16] [INFO] [1748157286.048416033] [tb3_1.lifecycle_manager_navigation]: Configuring velocity_smoother
+[velocity_smoother-15] [INFO] [1748157286.049517866] [tb3_1.velocity_smoother]: Configuring velocity smoother
+[lifecycle_manager-16] [INFO] [1748157286.065391913] [tb3_1.lifecycle_manager_navigation]: Activating controller_server
+[controller_server-9] [INFO] [1748157286.077430358] [tb3_1.controller_server]: Activating
+[controller_server-9] [INFO] [1748157286.077509420] [tb3_1.local_costmap.local_costmap]: Activating
+[controller_server-9] [INFO] [1748157286.077532328] [tb3_1.local_costmap.local_costmap]: Checking transform
+[controller_server-9] [INFO] [1748157286.077573745] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157286.355866077] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157286.577627529] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157286.855873416] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157287.077624462] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157287.355877617] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157287.577630201] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157287.855874136] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157288.077624626] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157288.355862488] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157288.577628345] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157288.855910068] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157289.077643869] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157289.355868255] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157289.577635511] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157289.855889860] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157290.077626666] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157290.355863348] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157290.577633051] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157290.855876298] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157291.077635806] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157291.355891209] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157291.577627879] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157291.855906400] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157292.077623237] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157292.355853220] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157292.577675730] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157292.855887554] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157293.077647696] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157293.355854984] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157293.577639712] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157293.855882969] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157294.077643602] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157294.355856760] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157294.577624938] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157294.855880630] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157295.077640288] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157295.355864275] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157295.577678691] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157295.855825852] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157296.077643481] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157296.355873688] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157296.577640893] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157296.855898478] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157297.077601359] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157297.355872496] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157297.577629298] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157297.855875362] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157298.077624621] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157298.355911895] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157298.577637270] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157298.855880055] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157299.077640631] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157299.355863584] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157299.577623743] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157299.855890417] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157300.077639402] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157300.355881495] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157300.577644031] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157300.855896112] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157301.077650058] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157301.355876370] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157301.577640306] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157301.855879399] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157302.077644313] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157302.355905619] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157302.577641481] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157302.855882114] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157303.077655552] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157303.355862175] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157303.577637570] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157303.855865355] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157304.077647386] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157304.355866863] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157304.577644496] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157304.855857547] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157305.077638743] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157305.355860528] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157305.577648849] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157305.855885371] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157306.077679630] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157306.355871316] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157306.577642738] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157306.855862501] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157307.077652153] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157307.355858719] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157307.577659896] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157307.855873376] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157308.077646967] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157308.355858285] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157308.577639840] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157308.855901584] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157309.077650593] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157309.355868131] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157309.577644589] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157309.855861428] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157310.077645850] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157310.355874356] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157310.577616315] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157310.855909565] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157311.077635391] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157311.355868300] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157311.577645183] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157311.855876276] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157312.077632906] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157312.355884187] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157312.577634252] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157312.855875267] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157313.077626381] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157313.355877596] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157313.577630946] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157313.855906187] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157314.077626363] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157314.355870876] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157314.577626744] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157314.855871955] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157315.077627335] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157315.355876182] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157315.577635334] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157315.855880549] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157316.077624547] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157316.355874654] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157316.577649593] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157316.855880563] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157317.077639370] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157317.355887385] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157317.577614695] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157317.855858589] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157318.077642122] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157318.355852286] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157318.577625834] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157318.855855204] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157319.077651172] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157319.355855192] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157319.577674489] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748157319.855853436] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748157320.077641236] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+^C[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[velocity_smoother-15] [INFO] [1748157320.084248324] [rclcpp]: signal_handler(signum=2)
+[velocity_smoother-7] [INFO] [1748157320.084248324] [rclcpp]: signal_handler(signum=2)
+[behavior_server-4] [INFO] [1748157320.084256356] [rclcpp]: signal_handler(signum=2)
+[bt_navigator-13] [INFO] [1748157320.084248324] [rclcpp]: signal_handler(signum=2)
+[bt_navigator-13] [INFO] [1748157320.084498080] [tb3_1.bt_navigator]: Running Nav2 LifecycleNode rcl preshutdown (bt_navigator)
+[bt_navigator-13] [INFO] [1748157320.084642375] [tb3_1.bt_navigator]: Cleaning up
+[lifecycle_manager-16] [INFO] [1748157320.084254470] [rclcpp]: signal_handler(signum=2)
+[lifecycle_manager-16] [INFO] [1748157320.084468048] [tb3_1.lifecycle_manager_navigation]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_navigation)
+[lifecycle_manager-8] [INFO] [1748157320.084256356] [rclcpp]: signal_handler(signum=2)
+[lifecycle_manager-8] [INFO] [1748157320.084482296] [tb3_0.lifecycle_manager_navigation]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_navigation)
+[behavior_server-12] [INFO] [1748157320.084254470] [rclcpp]: signal_handler(signum=2)
+[behavior_server-12] [INFO] [1748157320.084506182] [tb3_1.behavior_server]: Running Nav2 LifecycleNode rcl preshutdown (behavior_server)
+[behavior_server-12] [INFO] [1748157320.084650057] [tb3_1.behavior_server]: Cleaning up
+[planner_server-11] [INFO] [1748157320.084264527] [rclcpp]: signal_handler(signum=2)
+[planner_server-11] [INFO] [1748157320.084470912] [tb3_1.planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
+[planner_server-11] [INFO] [1748157320.084625054] [tb3_1.planner_server]: Cleaning up
+[controller_server-9] [INFO] [1748157320.084275493] [rclcpp]: signal_handler(signum=2)
+[controller_server-9] [INFO] [1748157320.084476639] [tb3_1.controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[controller_server-9] [INFO] [1748157320.084600539] [tb3_1.controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[planner_server-3] [INFO] [1748157320.084275493] [rclcpp]: signal_handler(signum=2)
+[waypoint_follower-14] [INFO] [1748157320.084331366] [rclcpp]: signal_handler(signum=2)
+[waypoint_follower-14] [INFO] [1748157320.084680788] [tb3_1.waypoint_follower]: Running Nav2 LifecycleNode rcl preshutdown (waypoint_follower)
+[controller_server-1] [INFO] [1748157320.084349316] [rclcpp]: signal_handler(signum=2)
+[controller_server-1] [INFO] [1748157320.084734706] [tb3_0.controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[controller_server-1] [INFO] [1748157320.084852530] [tb3_0.controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[controller_server-1] [INFO] [1748157320.085678696] [tb3_0.local_costmap.local_costmap]: start
+[controller_server-1] [ERROR] [1748157320.085998853] [tb3_0.local_costmap.local_costmap]: Caught exception in callback for transition 13
+[controller_server-1] [ERROR] [1748157320.086016384] [tb3_0.local_costmap.local_costmap]: Original error: could not create subscription: rcl node's context is invalid, at ./src/rcl/node.c:428
+[controller_server-1] [ERROR] [1748157320.086049209] [tb3_0.local_costmap.local_costmap]: Failed to finish transition 3. Current state is now: errorprocessing (Could not publish transition: publisher's context is invalid, at ./src/rcl/publisher.c:389, at ./src/rcl_lifecycle.c:368)
+[controller_server-1] [INFO] [1748157320.086094188] [tb3_0.controller_server]: Creating bond (controller_server) to lifecycle manager.
+[controller_server-1] [ERROR] [1748157320.086397024] [tb3_0.controller_server]: Caught exception in callback for transition 13
+[controller_server-1] [ERROR] [1748157320.086410993] [tb3_0.controller_server]: Original error: could not create publisher: rcl node's context is invalid, at ./src/rcl/node.c:428
+[controller_server-1] [ERROR] [1748157320.086425590] [tb3_0.controller_server]: Failed to finish transition 3. Current state is now: errorprocessing (Could not publish transition: publisher's context is invalid, at ./src/rcl/publisher.c:389, at ./src/rcl_lifecycle.c:368)
+[waypoint_follower-6] [INFO] [1748157320.084407076] [rclcpp]: signal_handler(signum=2)
+[waypoint_follower-6] [INFO] [1748157320.084606196] [tb3_0.waypoint_follower]: Running Nav2 LifecycleNode rcl preshutdown (waypoint_follower)
+[waypoint_follower-6] [INFO] [1748157320.084731843] [tb3_0.waypoint_follower]: Cleaning up
+[smoother_server-10] [INFO] [1748157320.084452683] [rclcpp]: signal_handler(signum=2)
+[smoother_server-10] [INFO] [1748157320.084702229] [tb3_1.smoother_server]: Running Nav2 LifecycleNode rcl preshutdown (smoother_server)
+[smoother_server-10] [INFO] [1748157320.084834371] [tb3_1.smoother_server]: Cleaning up
+[bt_navigator-5] [INFO] [1748157320.084464765] [rclcpp]: signal_handler(signum=2)
+[bt_navigator-5] [INFO] [1748157320.086311188] [tb3_0.bt_navigator]: Running Nav2 LifecycleNode rcl preshutdown (bt_navigator)
+[bt_navigator-5] [INFO] [1748157320.086427057] [tb3_0.bt_navigator]: Cleaning up
+[velocity_smoother-15] [INFO] [1748157320.085195107] [tb3_1.velocity_smoother]: Running Nav2 LifecycleNode rcl preshutdown (velocity_smoother)
+[velocity_smoother-15] [INFO] [1748157320.085358818] [tb3_1.velocity_smoother]: Cleaning up
+[velocity_smoother-15] [INFO] [1748157320.085434387] [tb3_1.velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[velocity_smoother-15] [INFO] [1748157320.104313129] [tb3_1.velocity_smoother]: Destroying
+[velocity_smoother-7] [INFO] [1748157320.088029520] [tb3_0.velocity_smoother]: Running Nav2 LifecycleNode rcl preshutdown (velocity_smoother)
+[velocity_smoother-7] [INFO] [1748157320.088116544] [tb3_0.velocity_smoother]: Cleaning up
+[velocity_smoother-7] [INFO] [1748157320.088157052] [tb3_0.velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[behavior_server-4] [INFO] [1748157320.087577011] [tb3_0.behavior_server]: Running Nav2 LifecycleNode rcl preshutdown (behavior_server)
+[behavior_server-4] [INFO] [1748157320.087668086] [tb3_0.behavior_server]: Cleaning up
+[controller_server-9] [INFO] [1748157320.085197552] [tb3_1.local_costmap.local_costmap]: start
+[controller_server-9] [ERROR] [1748157320.085518407] [tb3_1.local_costmap.local_costmap]: Caught exception in callback for transition 13
+[controller_server-9] [ERROR] [1748157320.085534471] [tb3_1.local_costmap.local_costmap]: Original error: could not create subscription: rcl node's context is invalid, at ./src/rcl/node.c:428
+[controller_server-9] [ERROR] [1748157320.085567367] [tb3_1.local_costmap.local_costmap]: Failed to finish transition 3. Current state is now: errorprocessing (Could not publish transition: publisher's context is invalid, at ./src/rcl/publisher.c:389, at ./src/rcl_lifecycle.c:368)
+[controller_server-9] [INFO] [1748157320.085616187] [tb3_1.controller_server]: Creating bond (controller_server) to lifecycle manager.
+[controller_server-9] [ERROR] [1748157320.085940954] [tb3_1.controller_server]: Caught exception in callback for transition 13
+[controller_server-9] [ERROR] [1748157320.085958903] [tb3_1.controller_server]: Original error: could not create publisher: rcl node's context is invalid, at ./src/rcl/node.c:428
+[controller_server-9] [ERROR] [1748157320.085978250] [tb3_1.controller_server]: Failed to finish transition 3. Current state is now: errorprocessing (Could not publish transition: publisher's context is invalid, at ./src/rcl/publisher.c:389, at ./src/rcl_lifecycle.c:368)
+[planner_server-3] [INFO] [1748157320.087843530] [tb3_0.planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
+[planner_server-3] [INFO] [1748157320.087917633] [tb3_0.planner_server]: Cleaning up
+[waypoint_follower-14] [INFO] [1748157320.084821939] [tb3_1.waypoint_follower]: Cleaning up
+[smoother_server-2] [INFO] [1748157320.084577212] [rclcpp]: signal_handler(signum=2)
+[smoother_server-2] [INFO] [1748157320.085639444] [tb3_0.smoother_server]: Running Nav2 LifecycleNode rcl preshutdown (smoother_server)
+[smoother_server-2] [INFO] [1748157320.085785066] [tb3_0.smoother_server]: Cleaning up
+[waypoint_follower-6] [INFO] [1748157320.118109023] [tb3_0.waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[behavior_server-12] [INFO] [1748157320.121305638] [tb3_1.behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[velocity_smoother-7] [INFO] [1748157320.128734841] [tb3_0.velocity_smoother]: Destroying
+[behavior_server-4] [INFO] [1748157320.136149447] [tb3_0.behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[waypoint_follower-14] [INFO] [1748157320.153314257] [tb3_1.waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[smoother_server-2] [INFO] [1748157320.159577232] [tb3_0.smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[smoother_server-10] [INFO] [1748157320.159622420] [tb3_1.smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[planner_server-3] [INFO] [1748157320.160685211] [tb3_0.global_costmap.global_costmap]: Cleaning up
+[waypoint_follower-6] [INFO] [1748157320.175743017] [tb3_0.waypoint_follower]: Destroying
+[smoother_server-2] [INFO] [1748157320.187311498] [tb3_0.smoother_server]: Destroying
+[smoother_server-10] [INFO] [1748157320.191603870] [tb3_1.smoother_server]: Destroying
+[controller_server-1] Warning: class_loader.ClassLoader: SEVERE WARNING!!! Attempting to unload library while objects created by this loader exist in the heap! You should delete your objects before attempting to unload the library or destroying the ClassLoader. The library will NOT be unloaded.
+[controller_server-1]          at line 127 in ./src/class_loader.cpp
+[controller_server-1] terminate called without an active exception
+[planner_server-3] [INFO] [1748157320.209276504] [tb3_0.planner_server]: Cleaning up plugin GridBased of type NavfnPlanner
+[planner_server-3] [INFO] [1748157320.209460190] [tb3_0.planner_server]: Destroying plugin GridBased of type NavfnPlanner
+[waypoint_follower-14] [INFO] [1748157320.210160779] [tb3_1.waypoint_follower]: Destroying
+[controller_server-9] Warning: class_loader.ClassLoader: SEVERE WARNING!!! Attempting to unload library while objects created by this loader exist in the heap! You should delete your objects before attempting to unload the library or destroying the ClassLoader. The library will NOT be unloaded.
+[controller_server-9]          at line 127 in ./src/class_loader.cpp
+[controller_server-9] terminate called without an active exception
+[planner_server-11] [INFO] [1748157320.227551669] [tb3_1.global_costmap.global_costmap]: Cleaning up
+[bt_navigator-5] [INFO] [1748157320.279995117] [tb3_0.bt_navigator]: Completed Cleaning up
+[bt_navigator-5] [INFO] [1748157320.280105399] [tb3_0.bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[planner_server-11] [INFO] [1748157320.289452613] [tb3_1.planner_server]: Cleaning up plugin GridBased of type NavfnPlanner
+[planner_server-11] [INFO] [1748157320.289718852] [tb3_1.planner_server]: Destroying plugin GridBased of type NavfnPlanner
+[bt_navigator-13] [INFO] [1748157320.342719503] [tb3_1.bt_navigator]: Completed Cleaning up
+[bt_navigator-13] [INFO] [1748157320.342823778] [tb3_1.bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[planner_server-3] [INFO] [1748157320.344801504] [tb3_0.planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[planner_server-3] [INFO] [1748157320.363255535] [tb3_0.global_costmap.global_costmap]: Destroying
+[INFO] [velocity_smoother-15]: process has finished cleanly [pid 533339]
+[behavior_server-12] [INFO] [1748157320.375049816] [tb3_1.behavior_server]: Destroying
+[behavior_server-4] [INFO] [1748157320.377151931] [tb3_0.behavior_server]: Destroying
+[planner_server-11] [INFO] [1748157320.380159344] [tb3_1.planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[planner_server-11] [INFO] [1748157320.398643686] [tb3_1.global_costmap.global_costmap]: Destroying
+[INFO] [velocity_smoother-7]: process has finished cleanly [pid 533210]
+[bt_navigator-5] [INFO] [1748157320.432157548] [tb3_0.bt_navigator]: Destroying
+[INFO] [smoother_server-10]: process has finished cleanly [pid 533329]
+[bt_navigator-13] [INFO] [1748157320.455400809] [tb3_1.bt_navigator]: Destroying
+[planner_server-3] [INFO] [1748157320.462439943] [tb3_0.planner_server]: Destroying
+[planner_server-11] [INFO] [1748157320.463091223] [tb3_1.planner_server]: Destroying
+[INFO] [waypoint_follower-14]: process has finished cleanly [pid 533337]
+[INFO] [smoother_server-2]: process has finished cleanly [pid 533200]
+[INFO] [waypoint_follower-6]: process has finished cleanly [pid 533208]
+[INFO] [behavior_server-12]: process has finished cleanly [pid 533333]
+[INFO] [behavior_server-4]: process has finished cleanly [pid 533204]
+[INFO] [bt_navigator-5]: process has finished cleanly [pid 533206]
+[INFO] [bt_navigator-13]: process has finished cleanly [pid 533335]
+[INFO] [planner_server-3]: process has finished cleanly [pid 533202]
+[INFO] [planner_server-11]: process has finished cleanly [pid 533331]
+[ERROR] [controller_server-9]: process has died [pid 533327, exit code -6, cmd '/opt/ros/humble/lib/nav2_controller/controller_server --ros-args --log-level info --ros-args -r __ns:=/tb3_1 --params-file /tmp/launch_params_73mj9f_9 -r /tf:=tf -r /tf_static:=tf_static -r cmd_vel:=cmd_vel_nav'].
+[lifecycle_manager-16] [ERROR] [1748157322.093642469] [tb3_1.lifecycle_manager_navigation]: Failed to change state for node: controller_server. Exception: controller_server/get_state service client: async_send_request failed.
+[lifecycle_manager-16] [ERROR] [1748157322.093710426] [tb3_1.lifecycle_manager_navigation]: Failed to bring up all requested nodes. Aborting bringup.
+[lifecycle_manager-8] [ERROR] [1748157322.097485406] [tb3_0.lifecycle_manager_navigation]: Failed to change state for node: controller_server. Exception: controller_server/get_state service client: async_send_request failed.
+[lifecycle_manager-8] [ERROR] [1748157322.097601624] [tb3_0.lifecycle_manager_navigation]: Failed to bring up all requested nodes. Aborting bringup.
+[lifecycle_manager-16] [INFO] [1748157322.140431620] [tb3_1.lifecycle_manager_navigation]: Destroying lifecycle_manager_navigation
+[lifecycle_manager-8] [INFO] [1748157322.145269881] [tb3_0.lifecycle_manager_navigation]: Destroying lifecycle_manager_navigation
+[INFO] [lifecycle_manager-16]: process has finished cleanly [pid 533341]
+[INFO] [lifecycle_manager-8]: process has finished cleanly [pid 533212]
+[ERROR] [controller_server-1]: process has died [pid 533198, exit code -6, cmd '/opt/ros/humble/lib/nav2_controller/controller_server --ros-args --log-level info --ros-args -r __ns:=/tb3_0 --params-file /tmp/launch_params_536x2t0d -r /tf:=tf -r /tf_static:=tf_static -r cmd_vel:=cmd_vel_nav'].
+biswash@biswash-pc:~/up_work/final_output$ /
+
+

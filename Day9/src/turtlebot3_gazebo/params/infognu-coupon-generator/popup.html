@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infognu Coupon Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <style>
+        .hide {
+            display: none;
+        }
+        * {
+            font-family: 'Source Sans Pro', sans-serif;
+            text-align: center;
+        }
+
+        html {
+            width: 200px;
+        }
+
+        #inUdemy {
+            font-size: 16px;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 0.3rem;
+        }
+
+        .price-wrapper {
+            background-color: #f3f4f6;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            color: #ed4344;
+            font-weight: 700;
+            font-size: 29px;
+        }
+
+        .error {
+          font-size: 0.80rem;
+          margin-bottom: 1rem;
+        }
+
+        .button {
+            background-color: #42976a;
+            border-radius: .375rem;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-color: #42976a;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #42975d;
+        }
+
+        .loader-wrapper {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           padding: 0.75rem;
+        }
+
+        .loader {
+          border: 3px solid #eee; /* Light grey */
+          border-top: 3px solid #10b981; /* Blue */
+          border-radius: 50%;
+          width: 20px;
+          height: 20px;
+          animation: spin 2s linear infinite;
+          cursor: progress;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+
+        .strikethrough {
+          position: relative;
+         }
+        .strikethrough:before {
+          position: absolute;
+          content: "";
+          left: 0;
+          top: 50%;
+          right: 0;
+          border-top: 1px solid black;
+  
+          -webkit-transform:rotate(-5deg);
+          -moz-transform:rotate(-5deg);
+          -ms-transform:rotate(-5deg);
+          -o-transform:rotate(-5deg);
+          transform:rotate(-5deg);
+         }
+
+    </style>
+</head>
+<body>
+    <script type="text/javascript" src="src/chrome-extension-async.js"></script>
+
+    <div class="container">
+        <div class="">
+            <!-- <img src="images/android-chrome-96x96.png" alt="Extension Image"> -->
+            <div class="logo"><a href="https://infognu.com?ref=chrome-extension" target="_blank"><img src="./images/logo.png" alt="Extension Logo" width="70%"></a></div>
+        </div>
+        <div id="notInUdemy" class="error">
+            <span>This is not a Udemy course page</span>
+            <div style="margin-top:0.7rem">
+                <a href="https://udemy.com" target="_blank"><button class="button">Go to Udemy</button></a>
+            </div>
+        </div>
+        
+        <div id="inUdemy">
+
+            <div id="">
+                <!-- <span>This course was created on </span> -->
+            </div>
+            <div class="">
+                <div id="result">
+                    <div class="loader-wrapper">
+                      <div class="loader"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,439 @@
+biswash@biswash-pc:~/up_work/final_output$ ros2 launch turtlebot3_gazebo multi_nav_launch.py 
+[INFO] [launch]: All log files can be found below /home/biswash/.ros/log/2025-05-25-16-35-49-003011-biswash-pc-618235
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [controller_server-1]: process started with pid [618247]
+[INFO] [smoother_server-2]: process started with pid [618249]
+[INFO] [planner_server-3]: process started with pid [618251]
+[INFO] [behavior_server-4]: process started with pid [618253]
+[INFO] [bt_navigator-5]: process started with pid [618255]
+[INFO] [waypoint_follower-6]: process started with pid [618257]
+[INFO] [velocity_smoother-7]: process started with pid [618259]
+[INFO] [lifecycle_manager-8]: process started with pid [618261]
+[lifecycle_manager-8] [INFO] [1748170249.688188053] [tb3_0.lifecycle_manager_navigation]: Creating
+[lifecycle_manager-8] [INFO] [1748170249.717238672] [tb3_0.lifecycle_manager_navigation]: Creating and initializing lifecycle service clients
+[bt_navigator-5] [INFO] [1748170249.790160587] [tb3_0.bt_navigator]: 
+[bt_navigator-5] 	bt_navigator lifecycle node launched. 
+[bt_navigator-5] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-5] [INFO] [1748170249.790398264] [tb3_0.bt_navigator]: Creating
+[planner_server-3] [INFO] [1748170250.090768913] [tb3_0.planner_server]: 
+[planner_server-3] 	planner_server lifecycle node launched. 
+[planner_server-3] 	Waiting on external lifecycle transitions to activate
+[planner_server-3] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-3] [INFO] [1748170250.137796498] [tb3_0.planner_server]: Creating
+[waypoint_follower-6] [INFO] [1748170250.140550768] [tb3_0.waypoint_follower]: 
+[waypoint_follower-6] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-6] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-6] [INFO] [1748170250.149030721] [tb3_0.waypoint_follower]: Creating
+[controller_server-1] [INFO] [1748170250.168199632] [tb3_0.controller_server]: 
+[controller_server-1] 	controller_server lifecycle node launched. 
+[controller_server-1] 	Waiting on external lifecycle transitions to activate
+[controller_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[behavior_server-4] [INFO] [1748170250.189827236] [tb3_0.behavior_server]: 
+[behavior_server-4] 	behavior_server lifecycle node launched. 
+[behavior_server-4] 	Waiting on external lifecycle transitions to activate
+[behavior_server-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[smoother_server-2] [INFO] [1748170250.225495647] [tb3_0.smoother_server]: 
+[smoother_server-2] 	smoother_server lifecycle node launched. 
+[smoother_server-2] 	Waiting on external lifecycle transitions to activate
+[smoother_server-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[velocity_smoother-7] [INFO] [1748170250.230911855] [tb3_0.velocity_smoother]: 
+[velocity_smoother-7] 	velocity_smoother lifecycle node launched. 
+[velocity_smoother-7] 	Waiting on external lifecycle transitions to activate
+[velocity_smoother-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[smoother_server-2] [INFO] [1748170250.267586638] [tb3_0.smoother_server]: Creating smoother server
+[controller_server-1] [INFO] [1748170250.273041469] [tb3_0.controller_server]: Creating controller server
+[planner_server-3] [INFO] [1748170250.374827801] [tb3_0.global_costmap.global_costmap]: 
+[planner_server-3] 	global_costmap lifecycle node launched. 
+[planner_server-3] 	Waiting on external lifecycle transitions to activate
+[planner_server-3] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-3] [ERROR] [1748170250.384581277] [pluginlib.ClassLoader]: Skipped loading plugin with error: XML Document '/home/biswash/navigation2_tutorials/install/camera_costmap_plugin/share/camera_costmap_plugin/camera_costmap_plugin.xml' has no Root Element. This likely means the XML is malformed or missing..
+[planner_server-3] [INFO] [1748170250.385989388] [tb3_0.global_costmap.global_costmap]: Creating Costmap
+[controller_server-1] [INFO] [1748170250.703004322] [tb3_0.local_costmap.local_costmap]: 
+[controller_server-1] 	local_costmap lifecycle node launched. 
+[controller_server-1] 	Waiting on external lifecycle transitions to activate
+[controller_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-1] [ERROR] [1748170250.711348779] [pluginlib.ClassLoader]: Skipped loading plugin with error: XML Document '/home/biswash/navigation2_tutorials/install/camera_costmap_plugin/share/camera_costmap_plugin/camera_costmap_plugin.xml' has no Root Element. This likely means the XML is malformed or missing..
+[controller_server-1] [INFO] [1748170250.712660995] [tb3_0.local_costmap.local_costmap]: Creating Costmap
+[lifecycle_manager-8] [INFO] [1748170250.881578325] [tb3_0.lifecycle_manager_navigation]: Starting managed nodes bringup...
+[lifecycle_manager-8] [INFO] [1748170250.881662905] [tb3_0.lifecycle_manager_navigation]: Configuring controller_server
+[controller_server-1] [INFO] [1748170250.888344185] [tb3_0.controller_server]: Configuring controller interface
+[controller_server-1] [INFO] [1748170250.888801868] [tb3_0.controller_server]: getting goal checker plugins..
+[controller_server-1] [INFO] [1748170250.889026204] [tb3_0.controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-1] [INFO] [1748170250.889093743] [tb3_0.local_costmap.local_costmap]: Configuring
+[controller_server-1] [INFO] [1748170250.983398462] [tb3_0.local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[controller_server-1] [INFO] [1748170250.994044046] [tb3_0.local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-1] [INFO] [1748170251.017084510] [tb3_0.local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[controller_server-1] [INFO] [1748170251.017162316] [tb3_0.local_costmap.local_costmap]: Using plugin "voxel_layer"
+[controller_server-1] [INFO] [1748170251.019015118] [tb3_0.local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-1] [INFO] [1748170251.071923368] [tb3_0.local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[controller_server-1] [INFO] [1748170251.071998100] [tb3_0.local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-1] [INFO] [1748170251.084032379] [tb3_0.local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-1] [INFO] [1748170251.149194774] [tb3_0.controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-1] [INFO] [1748170251.151715419] [tb3_0.controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-1] [INFO] [1748170251.153748906] [tb3_0.controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-1] [INFO] [1748170251.159392663] [tb3_0.controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[controller_server-1] [INFO] [1748170251.161464006] [tb3_0.controller_server]: Setting transform_tolerance to 2.000000
+[controller_server-1] [INFO] [1748170251.190054846] [tb3_0.controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[controller_server-1] [INFO] [1748170251.191703078] [tb3_0.controller_server]: Critic plugin initialized
+[controller_server-1] [INFO] [1748170251.192596374] [tb3_0.controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[controller_server-1] [INFO] [1748170251.194667996] [tb3_0.controller_server]: Critic plugin initialized
+[controller_server-1] [INFO] [1748170251.194986272] [tb3_0.controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[controller_server-1] [INFO] [1748170251.195562339] [tb3_0.controller_server]: Critic plugin initialized
+[controller_server-1] [INFO] [1748170251.196435311] [tb3_0.controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[controller_server-1] [INFO] [1748170251.198595564] [tb3_0.controller_server]: Critic plugin initialized
+[controller_server-1] [INFO] [1748170251.199261380] [tb3_0.controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[controller_server-1] [INFO] [1748170251.200567449] [tb3_0.controller_server]: Critic plugin initialized
+[controller_server-1] [INFO] [1748170251.200952635] [tb3_0.controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[controller_server-1] [INFO] [1748170251.201613632] [tb3_0.controller_server]: Critic plugin initialized
+[controller_server-1] [INFO] [1748170251.201944270] [tb3_0.controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[controller_server-1] [INFO] [1748170251.202691384] [tb3_0.controller_server]: Critic plugin initialized
+[controller_server-1] [INFO] [1748170251.202836309] [tb3_0.controller_server]: Controller Server has FollowPath  controllers available.
+[lifecycle_manager-8] [INFO] [1748170251.229596417] [tb3_0.lifecycle_manager_navigation]: Configuring smoother_server
+[smoother_server-2] [INFO] [1748170251.230038315] [tb3_0.smoother_server]: Configuring smoother server
+[smoother_server-2] [INFO] [1748170251.249547293] [tb3_0.smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[smoother_server-2] [INFO] [1748170251.251015958] [tb3_0.smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[lifecycle_manager-8] [INFO] [1748170251.270122848] [tb3_0.lifecycle_manager_navigation]: Configuring planner_server
+[planner_server-3] [INFO] [1748170251.270596246] [tb3_0.planner_server]: Configuring
+[planner_server-3] [INFO] [1748170251.270660152] [tb3_0.global_costmap.global_costmap]: Configuring
+[planner_server-3] [INFO] [1748170251.284360962] [tb3_0.global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-3] [INFO] [1748170251.290796881] [tb3_0.global_costmap.global_costmap]: Subscribing to the map topic (/tb3_0/map) with transient local durability
+[planner_server-3] [INFO] [1748170251.294251191] [tb3_0.global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-3] [INFO] [1748170251.294304551] [tb3_0.global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-3] [INFO] [1748170251.296973752] [tb3_0.global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-3] [INFO] [1748170251.307137209] [tb3_0.global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-3] [INFO] [1748170251.307204258] [tb3_0.global_costmap.global_costmap]: Using plugin "voxel_layer"
+[planner_server-3] [INFO] [1748170251.308746538] [tb3_0.global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-3] [INFO] [1748170251.328963168] [tb3_0.global_costmap.global_costmap]: Initialized plugin "voxel_layer"
+[planner_server-3] [INFO] [1748170251.329028052] [tb3_0.global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-3] [INFO] [1748170251.330596034] [tb3_0.global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-3] [INFO] [1748170251.351503973] [tb3_0.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 102 X 107 at 0.050000 m/pix
+[planner_server-3] [INFO] [1748170251.352362207] [tb3_0.planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[planner_server-3] [INFO] [1748170251.352431631] [tb3_0.planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-3] [INFO] [1748170251.354278358] [tb3_0.planner_server]: Planner Server has GridBased  planners available.
+[lifecycle_manager-8] [INFO] [1748170251.382663789] [tb3_0.lifecycle_manager_navigation]: Configuring behavior_server
+[behavior_server-4] [INFO] [1748170251.383072652] [tb3_0.behavior_server]: Configuring
+[behavior_server-4] [INFO] [1748170251.402933989] [tb3_0.behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[behavior_server-4] [INFO] [1748170251.404357675] [tb3_0.behavior_server]: Configuring spin
+[behavior_server-4] [INFO] [1748170251.420453062] [tb3_0.behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[behavior_server-4] [INFO] [1748170251.421996040] [tb3_0.behavior_server]: Configuring backup
+[behavior_server-4] [INFO] [1748170251.437727194] [tb3_0.behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[behavior_server-4] [INFO] [1748170251.439396239] [tb3_0.behavior_server]: Configuring drive_on_heading
+[behavior_server-4] [INFO] [1748170251.454578005] [tb3_0.behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[behavior_server-4] [INFO] [1748170251.456006999] [tb3_0.behavior_server]: Configuring wait
+[lifecycle_manager-8] [INFO] [1748170251.471844106] [tb3_0.lifecycle_manager_navigation]: Configuring bt_navigator
+[bt_navigator-5] [INFO] [1748170251.472296131] [tb3_0.bt_navigator]: Configuring
+[lifecycle_manager-8] [INFO] [1748170251.610396016] [tb3_0.lifecycle_manager_navigation]: Configuring waypoint_follower
+[waypoint_follower-6] [INFO] [1748170251.610788675] [tb3_0.waypoint_follower]: Configuring
+[waypoint_follower-6] [INFO] [1748170251.662035842] [tb3_0.waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[lifecycle_manager-8] [INFO] [1748170251.670658346] [tb3_0.lifecycle_manager_navigation]: Configuring velocity_smoother
+[velocity_smoother-7] [INFO] [1748170251.671573782] [tb3_0.velocity_smoother]: Configuring velocity smoother
+[lifecycle_manager-8] [INFO] [1748170251.701811248] [tb3_0.lifecycle_manager_navigation]: Activating controller_server
+[controller_server-1] [INFO] [1748170251.702861901] [tb3_0.controller_server]: Activating
+[controller_server-1] [INFO] [1748170251.702938379] [tb3_0.local_costmap.local_costmap]: Activating
+[controller_server-1] [INFO] [1748170251.702965827] [tb3_0.local_costmap.local_costmap]: Checking transform
+[controller_server-1] [INFO] [1748170251.703014159] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from tb3_0/base_link to tb3_0/odom to become available, tf error: Invalid frame ID "tb3_0/odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748170252.203902315] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from tb3_0/base_link to tb3_0/odom to become available, tf error: Invalid frame ID "tb3_0/odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748170252.703083221] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from tb3_0/base_link to tb3_0/odom to become available, tf error: Invalid frame ID "tb3_0/odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748170253.203095891] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from tb3_0/base_link to tb3_0/odom to become available, tf error: Invalid frame ID "tb3_0/odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748170253.703078178] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from tb3_0/base_link to tb3_0/odom to become available, tf error: Invalid frame ID "tb3_0/odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748170254.203091195] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from tb3_0/base_link to tb3_0/odom to become available, tf error: Invalid frame ID "tb3_0/odom" passed to canTransform argument target_frame - frame does not exist
+[INFO] [controller_server-9]: process started with pid [618374]
+[INFO] [smoother_server-10]: process started with pid [618376]
+[INFO] [planner_server-11]: process started with pid [618378]
+[INFO] [behavior_server-12]: process started with pid [618380]
+[INFO] [bt_navigator-13]: process started with pid [618382]
+[INFO] [waypoint_follower-14]: process started with pid [618384]
+[INFO] [velocity_smoother-15]: process started with pid [618386]
+[INFO] [lifecycle_manager-16]: process started with pid [618388]
+[controller_server-1] [INFO] [1748170254.706826021] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from tb3_0/base_link to tb3_0/odom to become available, tf error: Invalid frame ID "tb3_0/odom" passed to canTransform argument target_frame - frame does not exist
+[velocity_smoother-15] [INFO] [1748170254.720256118] [tb3_1.velocity_smoother]: 
+[velocity_smoother-15] 	velocity_smoother lifecycle node launched. 
+[velocity_smoother-15] 	Waiting on external lifecycle transitions to activate
+[velocity_smoother-15] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[lifecycle_manager-16] [INFO] [1748170254.939732727] [tb3_1.lifecycle_manager_navigation]: Creating
+[bt_navigator-13] [INFO] [1748170254.949362440] [tb3_1.bt_navigator]: 
+[bt_navigator-13] 	bt_navigator lifecycle node launched. 
+[bt_navigator-13] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-13] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-13] [INFO] [1748170254.949620092] [tb3_1.bt_navigator]: Creating
+[controller_server-9] [INFO] [1748170254.961032556] [tb3_1.controller_server]: 
+[controller_server-9] 	controller_server lifecycle node launched. 
+[controller_server-9] 	Waiting on external lifecycle transitions to activate
+[controller_server-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[smoother_server-10] [INFO] [1748170254.971637142] [tb3_1.smoother_server]: 
+[smoother_server-10] 	smoother_server lifecycle node launched. 
+[smoother_server-10] 	Waiting on external lifecycle transitions to activate
+[smoother_server-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[smoother_server-10] [INFO] [1748170254.998967242] [tb3_1.smoother_server]: Creating smoother server
+[planner_server-11] [INFO] [1748170255.057379422] [tb3_1.planner_server]: 
+[planner_server-11] 	planner_server lifecycle node launched. 
+[planner_server-11] 	Waiting on external lifecycle transitions to activate
+[planner_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[lifecycle_manager-16] [INFO] [1748170255.063645133] [tb3_1.lifecycle_manager_navigation]: Creating and initializing lifecycle service clients
+[planner_server-11] [INFO] [1748170255.095462245] [tb3_1.planner_server]: Creating
+[controller_server-9] [INFO] [1748170255.103956237] [tb3_1.controller_server]: Creating controller server
+[behavior_server-12] [INFO] [1748170255.112403504] [tb3_1.behavior_server]: 
+[behavior_server-12] 	behavior_server lifecycle node launched. 
+[behavior_server-12] 	Waiting on external lifecycle transitions to activate
+[behavior_server-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-1] [INFO] [1748170255.203088732] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from tb3_0/base_link to tb3_0/odom to become available, tf error: Invalid frame ID "tb3_0/odom" passed to canTransform argument target_frame - frame does not exist
+[waypoint_follower-14] [INFO] [1748170255.203633789] [tb3_1.waypoint_follower]: 
+[waypoint_follower-14] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-14] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-14] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-14] [INFO] [1748170255.215007909] [tb3_1.waypoint_follower]: Creating
+[controller_server-1] [INFO] [1748170255.704938347] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from tb3_0/base_link to tb3_0/odom to become available, tf error: Invalid frame ID "tb3_0/odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748170256.203108757] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from tb3_0/base_link to tb3_0/odom to become available, tf error: Invalid frame ID "tb3_0/odom" passed to canTransform argument target_frame - frame does not exist
+[lifecycle_manager-16] [INFO] [1748170256.488432363] [tb3_1.lifecycle_manager_navigation]: Starting managed nodes bringup...
+[lifecycle_manager-16] [INFO] [1748170256.488529654] [tb3_1.lifecycle_manager_navigation]: Configuring controller_server
+[controller_server-9] [INFO] [1748170256.580667134] [tb3_1.local_costmap.local_costmap]: 
+[controller_server-9] 	local_costmap lifecycle node launched. 
+[controller_server-9] 	Waiting on external lifecycle transitions to activate
+[controller_server-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-11] [INFO] [1748170256.582576440] [tb3_1.global_costmap.global_costmap]: 
+[planner_server-11] 	global_costmap lifecycle node launched. 
+[planner_server-11] 	Waiting on external lifecycle transitions to activate
+[planner_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-9] [ERROR] [1748170256.592909406] [pluginlib.ClassLoader]: Skipped loading plugin with error: XML Document '/home/biswash/navigation2_tutorials/install/camera_costmap_plugin/share/camera_costmap_plugin/camera_costmap_plugin.xml' has no Root Element. This likely means the XML is malformed or missing..
+[planner_server-11] [ERROR] [1748170256.596607678] [pluginlib.ClassLoader]: Skipped loading plugin with error: XML Document '/home/biswash/navigation2_tutorials/install/camera_costmap_plugin/share/camera_costmap_plugin/camera_costmap_plugin.xml' has no Root Element. This likely means the XML is malformed or missing..
+[planner_server-11] [INFO] [1748170256.598437084] [tb3_1.global_costmap.global_costmap]: Creating Costmap
+[controller_server-9] [INFO] [1748170256.603071884] [tb3_1.local_costmap.local_costmap]: Creating Costmap
+[controller_server-9] [INFO] [1748170256.681986563] [tb3_1.controller_server]: Configuring controller interface
+[controller_server-9] [INFO] [1748170256.682535740] [tb3_1.controller_server]: getting goal checker plugins..
+[controller_server-9] [INFO] [1748170256.682836416] [tb3_1.controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-9] [INFO] [1748170256.682923790] [tb3_1.local_costmap.local_costmap]: Configuring
+[controller_server-1] [INFO] [1748170256.703086221] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from tb3_0/base_link to tb3_0/odom to become available, tf error: Invalid frame ID "tb3_0/odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748170256.795418843] [tb3_1.local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[controller_server-9] [INFO] [1748170256.825290959] [tb3_1.local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-9] [INFO] [1748170256.871541745] [tb3_1.local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[controller_server-9] [INFO] [1748170256.871639456] [tb3_1.local_costmap.local_costmap]: Using plugin "voxel_layer"
+[controller_server-9] [INFO] [1748170256.886633693] [tb3_1.local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-9] [INFO] [1748170256.944084480] [tb3_1.local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[controller_server-9] [INFO] [1748170256.944287445] [tb3_1.local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-9] [INFO] [1748170256.947327793] [tb3_1.local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-9] [INFO] [1748170257.064489007] [tb3_1.controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-9] [INFO] [1748170257.069257697] [tb3_1.controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-9] [INFO] [1748170257.074970599] [tb3_1.controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-9] [INFO] [1748170257.085557445] [tb3_1.controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[controller_server-9] [INFO] [1748170257.097034654] [tb3_1.controller_server]: Setting transform_tolerance to 2.000000
+[controller_server-9] [INFO] [1748170257.200491287] [tb3_1.controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[controller_server-1] [INFO] [1748170257.203076257] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from tb3_0/base_link to tb3_0/odom to become available, tf error: Invalid frame ID "tb3_0/odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748170257.207021145] [tb3_1.controller_server]: Critic plugin initialized
+[controller_server-9] [INFO] [1748170257.209034448] [tb3_1.controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[controller_server-9] [INFO] [1748170257.214596489] [tb3_1.controller_server]: Critic plugin initialized
+[controller_server-9] [INFO] [1748170257.216477787] [tb3_1.controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[controller_server-9] [INFO] [1748170257.219858203] [tb3_1.controller_server]: Critic plugin initialized
+[controller_server-9] [INFO] [1748170257.222071956] [tb3_1.controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[controller_server-9] [INFO] [1748170257.225368838] [tb3_1.controller_server]: Critic plugin initialized
+[controller_server-9] [INFO] [1748170257.225837417] [tb3_1.controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[controller_server-9] [INFO] [1748170257.226748942] [tb3_1.controller_server]: Critic plugin initialized
+[controller_server-9] [INFO] [1748170257.227072596] [tb3_1.controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[controller_server-9] [INFO] [1748170257.227775848] [tb3_1.controller_server]: Critic plugin initialized
+[controller_server-9] [INFO] [1748170257.229835876] [tb3_1.controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[controller_server-9] [INFO] [1748170257.230666033] [tb3_1.controller_server]: Critic plugin initialized
+[controller_server-9] [INFO] [1748170257.230809072] [tb3_1.controller_server]: Controller Server has FollowPath  controllers available.
+[lifecycle_manager-16] [INFO] [1748170257.323409543] [tb3_1.lifecycle_manager_navigation]: Configuring smoother_server
+[smoother_server-10] [INFO] [1748170257.325754741] [tb3_1.smoother_server]: Configuring smoother server
+[smoother_server-10] [INFO] [1748170257.362518224] [tb3_1.smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[smoother_server-10] [INFO] [1748170257.364845263] [tb3_1.smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[lifecycle_manager-16] [INFO] [1748170257.382874122] [tb3_1.lifecycle_manager_navigation]: Configuring planner_server
+[planner_server-11] [INFO] [1748170257.383375457] [tb3_1.planner_server]: Configuring
+[planner_server-11] [INFO] [1748170257.383433706] [tb3_1.global_costmap.global_costmap]: Configuring
+[planner_server-11] [INFO] [1748170257.401576130] [tb3_1.global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-11] [INFO] [1748170257.411324647] [tb3_1.global_costmap.global_costmap]: Subscribing to the map topic (/tb3_1/map) with transient local durability
+[planner_server-11] [INFO] [1748170257.419173566] [tb3_1.global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-11] [INFO] [1748170257.419309132] [tb3_1.global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-11] [INFO] [1748170257.425611022] [tb3_1.global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-11] [INFO] [1748170257.450490041] [tb3_1.global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-11] [INFO] [1748170257.450562608] [tb3_1.global_costmap.global_costmap]: Using plugin "voxel_layer"
+[planner_server-11] [INFO] [1748170257.452047476] [tb3_1.global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-11] [INFO] [1748170257.487918223] [tb3_1.global_costmap.global_costmap]: Initialized plugin "voxel_layer"
+[planner_server-11] [INFO] [1748170257.487976961] [tb3_1.global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-11] [INFO] [1748170257.491408711] [tb3_1.global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-11] [INFO] [1748170257.520189525] [tb3_1.global_costmap.global_costmap]: StaticLayer: Resizing costmap to 111 X 107 at 0.050000 m/pix
+[planner_server-11] [INFO] [1748170257.521008647] [tb3_1.planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[planner_server-11] [INFO] [1748170257.521068712] [tb3_1.planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-11] [INFO] [1748170257.523415237] [tb3_1.planner_server]: Planner Server has GridBased  planners available.
+[lifecycle_manager-16] [INFO] [1748170257.579507782] [tb3_1.lifecycle_manager_navigation]: Configuring behavior_server
+[behavior_server-12] [INFO] [1748170257.582040788] [tb3_1.behavior_server]: Configuring
+[behavior_server-12] [INFO] [1748170257.659542606] [tb3_1.behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[behavior_server-12] [INFO] [1748170257.661252789] [tb3_1.behavior_server]: Configuring spin
+[controller_server-1] [INFO] [1748170257.704919514] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from tb3_0/base_link to tb3_0/odom to become available, tf error: Invalid frame ID "tb3_0/odom" passed to canTransform argument target_frame - frame does not exist
+[behavior_server-12] [INFO] [1748170257.720762766] [tb3_1.behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[behavior_server-12] [INFO] [1748170257.725695867] [tb3_1.behavior_server]: Configuring backup
+[behavior_server-12] [INFO] [1748170257.786841574] [tb3_1.behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[behavior_server-12] [INFO] [1748170257.789399584] [tb3_1.behavior_server]: Configuring drive_on_heading
+[behavior_server-12] [INFO] [1748170257.830507739] [tb3_1.behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[behavior_server-12] [INFO] [1748170257.834613477] [tb3_1.behavior_server]: Configuring wait
+[lifecycle_manager-16] [INFO] [1748170257.874806126] [tb3_1.lifecycle_manager_navigation]: Configuring bt_navigator
+[bt_navigator-13] [INFO] [1748170257.876159969] [tb3_1.bt_navigator]: Configuring
+[lifecycle_manager-16] [INFO] [1748170258.110733902] [tb3_1.lifecycle_manager_navigation]: Configuring waypoint_follower
+[waypoint_follower-14] [INFO] [1748170258.111307804] [tb3_1.waypoint_follower]: Configuring
+[waypoint_follower-14] [INFO] [1748170258.141553441] [tb3_1.waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[lifecycle_manager-16] [INFO] [1748170258.143986153] [tb3_1.lifecycle_manager_navigation]: Configuring velocity_smoother
+[velocity_smoother-15] [INFO] [1748170258.144556912] [tb3_1.velocity_smoother]: Configuring velocity smoother
+[lifecycle_manager-16] [INFO] [1748170258.157443488] [tb3_1.lifecycle_manager_navigation]: Activating controller_server
+[controller_server-9] [INFO] [1748170258.157866110] [tb3_1.controller_server]: Activating
+[controller_server-9] [INFO] [1748170258.157923242] [tb3_1.local_costmap.local_costmap]: Activating
+[controller_server-9] [INFO] [1748170258.157942100] [tb3_1.local_costmap.local_costmap]: Checking transform
+[controller_server-9] [INFO] [1748170258.157979606] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from tb3_1/base_link to tb3_1/odom to become available, tf error: Invalid frame ID "tb3_1/odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748170258.203067431] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from tb3_0/base_link to tb3_0/odom to become available, tf error: Invalid frame ID "tb3_0/odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748170258.658054988] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from tb3_1/base_link to tb3_1/odom to become available, tf error: Invalid frame ID "tb3_1/odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748170258.703074018] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from tb3_0/base_link to tb3_0/odom to become available, tf error: Invalid frame ID "tb3_0/odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748170259.158073448] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from tb3_1/base_link to tb3_1/odom to become available, tf error: Invalid frame ID "tb3_1/odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748170259.203091290] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from tb3_0/base_link to tb3_0/odom to become available, tf error: Invalid frame ID "tb3_0/odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748170259.658065296] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from tb3_1/base_link to tb3_1/odom to become available, tf error: Invalid frame ID "tb3_1/odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748170259.703107724] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from tb3_0/base_link to tb3_0/odom to become available, tf error: Invalid frame ID "tb3_0/odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748170260.158047576] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from tb3_1/base_link to tb3_1/odom to become available, tf error: Invalid frame ID "tb3_1/odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748170260.203073381] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from tb3_0/base_link to tb3_0/odom to become available, tf error: Invalid frame ID "tb3_0/odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748170260.658051297] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from tb3_1/base_link to tb3_1/odom to become available, tf error: Invalid frame ID "tb3_1/odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748170260.703083248] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from tb3_0/base_link to tb3_0/odom to become available, tf error: Invalid frame ID "tb3_0/odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748170261.158071361] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from tb3_1/base_link to tb3_1/odom to become available, tf error: Invalid frame ID "tb3_1/odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748170261.203084384] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from tb3_0/base_link to tb3_0/odom to become available, tf error: Invalid frame ID "tb3_0/odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748170261.658060693] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from tb3_1/base_link to tb3_1/odom to become available, tf error: Invalid frame ID "tb3_1/odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748170261.703125121] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from tb3_0/base_link to tb3_0/odom to become available, tf error: Invalid frame ID "tb3_0/odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748170262.158062666] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from tb3_1/base_link to tb3_1/odom to become available, tf error: Invalid frame ID "tb3_1/odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748170262.203096573] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from tb3_0/base_link to tb3_0/odom to become available, tf error: Invalid frame ID "tb3_0/odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748170262.658056747] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from tb3_1/base_link to tb3_1/odom to become available, tf error: Invalid frame ID "tb3_1/odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748170262.703091910] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from tb3_0/base_link to tb3_0/odom to become available, tf error: Invalid frame ID "tb3_0/odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748170263.158070662] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from tb3_1/base_link to tb3_1/odom to become available, tf error: Invalid frame ID "tb3_1/odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748170263.203095838] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from tb3_0/base_link to tb3_0/odom to become available, tf error: Invalid frame ID "tb3_0/odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748170263.658059084] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from tb3_1/base_link to tb3_1/odom to become available, tf error: Invalid frame ID "tb3_1/odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748170263.703091314] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from tb3_0/base_link to tb3_0/odom to become available, tf error: Invalid frame ID "tb3_0/odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748170264.158055956] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from tb3_1/base_link to tb3_1/odom to become available, tf error: Invalid frame ID "tb3_1/odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748170264.203094821] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from tb3_0/base_link to tb3_0/odom to become available, tf error: Invalid frame ID "tb3_0/odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748170264.658055552] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from tb3_1/base_link to tb3_1/odom to become available, tf error: Invalid frame ID "tb3_1/odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748170264.703093509] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from tb3_0/base_link to tb3_0/odom to become available, tf error: Invalid frame ID "tb3_0/odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-9] [INFO] [1748170265.158060735] [tb3_1.local_costmap.local_costmap]: Timed out waiting for transform from tb3_1/base_link to tb3_1/odom to become available, tf error: Invalid frame ID "tb3_1/odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-1] [INFO] [1748170265.203081441] [tb3_0.local_costmap.local_costmap]: Timed out waiting for transform from tb3_0/base_link to tb3_0/odom to become available, tf error: Invalid frame ID "tb3_0/odom" passed to canTransform argument target_frame - frame does not exist
+^C[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[bt_navigator-13] [INFO] [1748170265.572193731] [rclcpp]: signal_handler(signum=2)
+[bt_navigator-13] [INFO] [1748170265.572476387] [tb3_1.bt_navigator]: Running Nav2 LifecycleNode rcl preshutdown (bt_navigator)
+[bt_navigator-13] [INFO] [1748170265.572636258] [tb3_1.bt_navigator]: Cleaning up
+[velocity_smoother-15] [INFO] [1748170265.572184233] [rclcpp]: signal_handler(signum=2)
+[velocity_smoother-15] [INFO] [1748170265.572446773] [tb3_1.velocity_smoother]: Running Nav2 LifecycleNode rcl preshutdown (velocity_smoother)
+[velocity_smoother-15] [INFO] [1748170265.572581431] [tb3_1.velocity_smoother]: Cleaning up
+[velocity_smoother-15] [INFO] [1748170265.572674393] [tb3_1.velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[behavior_server-12] [INFO] [1748170265.572197154] [rclcpp]: signal_handler(signum=2)
+[behavior_server-12] [INFO] [1748170265.572409617] [tb3_1.behavior_server]: Running Nav2 LifecycleNode rcl preshutdown (behavior_server)
+[behavior_server-12] [INFO] [1748170265.572567393] [tb3_1.behavior_server]: Cleaning up
+[planner_server-11] [INFO] [1748170265.572197154] [rclcpp]: signal_handler(signum=2)
+[planner_server-11] [INFO] [1748170265.572489867] [tb3_1.planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
+[planner_server-11] [INFO] [1748170265.572602175] [tb3_1.planner_server]: Cleaning up
+[waypoint_follower-14] [INFO] [1748170265.572192265] [rclcpp]: signal_handler(signum=2)
+[lifecycle_manager-16] [INFO] [1748170265.572188423] [rclcpp]: signal_handler(signum=2)
+[lifecycle_manager-16] [INFO] [1748170265.572501670] [tb3_1.lifecycle_manager_navigation]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_navigation)
+[waypoint_follower-6] [INFO] [1748170265.572247161] [rclcpp]: signal_handler(signum=2)
+[velocity_smoother-7] [INFO] [1748170265.572281943] [rclcpp]: signal_handler(signum=2)
+[velocity_smoother-7] [INFO] [1748170265.572791729] [tb3_0.velocity_smoother]: Running Nav2 LifecycleNode rcl preshutdown (velocity_smoother)
+[lifecycle_manager-8] [INFO] [1748170265.572295423] [rclcpp]: signal_handler(signum=2)
+[controller_server-1] [INFO] [1748170265.572309042] [rclcpp]: signal_handler(signum=2)
+[bt_navigator-5] [INFO] [1748170265.572309042] [rclcpp]: signal_handler(signum=2)
+[bt_navigator-5] [INFO] [1748170265.572719232] [tb3_0.bt_navigator]: Running Nav2 LifecycleNode rcl preshutdown (bt_navigator)
+[bt_navigator-5] [INFO] [1748170265.572821273] [tb3_0.bt_navigator]: Cleaning up
+[smoother_server-10] [INFO] [1748170265.572342428] [rclcpp]: signal_handler(signum=2)
+[controller_server-9] [INFO] [1748170265.572372949] [rclcpp]: signal_handler(signum=2)
+[behavior_server-4] [INFO] [1748170265.572444399] [rclcpp]: signal_handler(signum=2)
+[behavior_server-4] [INFO] [1748170265.572626410] [tb3_0.behavior_server]: Running Nav2 LifecycleNode rcl preshutdown (behavior_server)
+[behavior_server-4] [INFO] [1748170265.572769310] [tb3_0.behavior_server]: Cleaning up
+[planner_server-3] [INFO] [1748170265.572444399] [rclcpp]: signal_handler(signum=2)
+[planner_server-3] [INFO] [1748170265.572661123] [tb3_0.planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
+[planner_server-3] [INFO] [1748170265.572795501] [tb3_0.planner_server]: Cleaning up
+[waypoint_follower-14] [INFO] [1748170265.572851795] [tb3_1.waypoint_follower]: Running Nav2 LifecycleNode rcl preshutdown (waypoint_follower)
+[waypoint_follower-14] [INFO] [1748170265.572994485] [tb3_1.waypoint_follower]: Cleaning up
+[waypoint_follower-14] [INFO] [1748170265.629639279] [tb3_1.waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[velocity_smoother-7] [INFO] [1748170265.572915422] [tb3_0.velocity_smoother]: Cleaning up
+[velocity_smoother-7] [INFO] [1748170265.572981703] [tb3_0.velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[velocity_smoother-7] [INFO] [1748170265.596427188] [tb3_0.velocity_smoother]: Destroying
+[controller_server-1] [INFO] [1748170265.573971452] [tb3_0.controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[controller_server-1] [INFO] [1748170265.574078662] [tb3_0.controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[controller_server-1] [INFO] [1748170265.583714172] [tb3_0.local_costmap.local_costmap]: start
+[controller_server-1] [ERROR] [1748170265.583928731] [tb3_0.local_costmap.local_costmap]: Caught exception in callback for transition 13
+[controller_server-1] [ERROR] [1748170265.583940325] [tb3_0.local_costmap.local_costmap]: Original error: could not create subscription: rcl node's context is invalid, at ./src/rcl/node.c:428
+[controller_server-1] [ERROR] [1748170265.583966796] [tb3_0.local_costmap.local_costmap]: Failed to finish transition 3. Current state is now: errorprocessing (Could not publish transition: publisher's context is invalid, at ./src/rcl/publisher.c:389, at ./src/rcl_lifecycle.c:368)
+[controller_server-1] [INFO] [1748170265.584014568] [tb3_0.controller_server]: Creating bond (controller_server) to lifecycle manager.
+[controller_server-1] [ERROR] [1748170265.589932600] [tb3_0.controller_server]: Caught exception in callback for transition 13
+[controller_server-1] [ERROR] [1748170265.589963610] [tb3_0.controller_server]: Original error: could not create publisher: rcl node's context is invalid, at ./src/rcl/node.c:428
+[controller_server-1] [ERROR] [1748170265.589980163] [tb3_0.controller_server]: Failed to finish transition 3. Current state is now: errorprocessing (Could not publish transition: publisher's context is invalid, at ./src/rcl/publisher.c:389, at ./src/rcl_lifecycle.c:368)
+[smoother_server-10] [INFO] [1748170265.574341133] [tb3_1.smoother_server]: Running Nav2 LifecycleNode rcl preshutdown (smoother_server)
+[smoother_server-10] [INFO] [1748170265.574454489] [tb3_1.smoother_server]: Cleaning up
+[smoother_server-10] [INFO] [1748170265.677662547] [tb3_1.smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[waypoint_follower-6] [INFO] [1748170265.574423967] [tb3_0.waypoint_follower]: Running Nav2 LifecycleNode rcl preshutdown (waypoint_follower)
+[waypoint_follower-6] [INFO] [1748170265.574534110] [tb3_0.waypoint_follower]: Cleaning up
+[waypoint_follower-6] [INFO] [1748170265.626521963] [tb3_0.waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[controller_server-9] [INFO] [1748170265.575693648] [tb3_1.controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[controller_server-9] [INFO] [1748170265.575794502] [tb3_1.controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[controller_server-9] [INFO] [1748170265.583339743] [tb3_1.local_costmap.local_costmap]: start
+[controller_server-9] [ERROR] [1748170265.583566803] [tb3_1.local_costmap.local_costmap]: Caught exception in callback for transition 13
+[controller_server-9] [ERROR] [1748170265.583577699] [tb3_1.local_costmap.local_costmap]: Original error: could not create subscription: rcl node's context is invalid, at ./src/rcl/node.c:428
+[controller_server-9] [ERROR] [1748170265.583600607] [tb3_1.local_costmap.local_costmap]: Failed to finish transition 3. Current state is now: errorprocessing (Could not publish transition: publisher's context is invalid, at ./src/rcl/publisher.c:389, at ./src/rcl_lifecycle.c:368)
+[controller_server-9] [INFO] [1748170265.583636297] [tb3_1.controller_server]: Creating bond (controller_server) to lifecycle manager.
+[controller_server-9] [ERROR] [1748170265.583853091] [tb3_1.controller_server]: Caught exception in callback for transition 13
+[controller_server-9] [ERROR] [1748170265.583863497] [tb3_1.controller_server]: Original error: could not create publisher: rcl node's context is invalid, at ./src/rcl/node.c:428
+[controller_server-9] [ERROR] [1748170265.583876418] [tb3_1.controller_server]: Failed to finish transition 3. Current state is now: errorprocessing (Could not publish transition: publisher's context is invalid, at ./src/rcl/publisher.c:389, at ./src/rcl_lifecycle.c:368)
+[smoother_server-2] [INFO] [1748170265.575929789] [rclcpp]: signal_handler(signum=2)
+[smoother_server-2] [INFO] [1748170265.584268938] [tb3_0.smoother_server]: Running Nav2 LifecycleNode rcl preshutdown (smoother_server)
+[smoother_server-2] [INFO] [1748170265.584378033] [tb3_0.smoother_server]: Cleaning up
+[lifecycle_manager-8] [INFO] [1748170265.576077786] [tb3_0.lifecycle_manager_navigation]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_navigation)
+[velocity_smoother-15] [INFO] [1748170265.607600229] [tb3_1.velocity_smoother]: Destroying
+[behavior_server-4] [INFO] [1748170265.641701913] [tb3_0.behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[behavior_server-12] [INFO] [1748170265.642457827] [tb3_1.behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[waypoint_follower-14] [INFO] [1748170265.692559842] [tb3_1.waypoint_follower]: Destroying
+[smoother_server-10] [INFO] [1748170265.694328833] [tb3_1.smoother_server]: Destroying
+[waypoint_follower-6] [INFO] [1748170265.700451715] [tb3_0.waypoint_follower]: Destroying
+[smoother_server-2] [INFO] [1748170265.708262360] [tb3_0.smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[planner_server-3] [INFO] [1748170265.733636427] [tb3_0.global_costmap.global_costmap]: Cleaning up
+[controller_server-9] Warning: class_loader.ClassLoader: SEVERE WARNING!!! Attempting to unload library while objects created by this loader exist in the heap! You should delete your objects before attempting to unload the library or destroying the ClassLoader. The library will NOT be unloaded.
+[controller_server-9]          at line 127 in ./src/class_loader.cpp
+[controller_server-9] terminate called without an active exception
+[smoother_server-2] [INFO] [1748170265.744387265] [tb3_0.smoother_server]: Destroying
+[planner_server-11] [INFO] [1748170265.796239482] [tb3_1.global_costmap.global_costmap]: Cleaning up
+[controller_server-1] Warning: class_loader.ClassLoader: SEVERE WARNING!!! Attempting to unload library while objects created by this loader exist in the heap! You should delete your objects before attempting to unload the library or destroying the ClassLoader. The library will NOT be unloaded.
+[controller_server-1]          at line 127 in ./src/class_loader.cpp
+[controller_server-1] terminate called without an active exception
+[planner_server-3] [INFO] [1748170265.812603346] [tb3_0.planner_server]: Cleaning up plugin GridBased of type NavfnPlanner
+[planner_server-3] [INFO] [1748170265.813052578] [tb3_0.planner_server]: Destroying plugin GridBased of type NavfnPlanner
+[bt_navigator-5] [INFO] [1748170265.834247014] [tb3_0.bt_navigator]: Completed Cleaning up
+[bt_navigator-5] [INFO] [1748170265.834360509] [tb3_0.bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[planner_server-11] [INFO] [1748170265.887701227] [tb3_1.planner_server]: Cleaning up plugin GridBased of type NavfnPlanner
+[planner_server-11] [INFO] [1748170265.887796214] [tb3_1.planner_server]: Destroying plugin GridBased of type NavfnPlanner
+[bt_navigator-13] [INFO] [1748170265.919959608] [tb3_1.bt_navigator]: Completed Cleaning up
+[bt_navigator-13] [INFO] [1748170265.920076525] [tb3_1.bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[behavior_server-4] [INFO] [1748170265.946443625] [tb3_0.behavior_server]: Destroying
+[planner_server-3] [INFO] [1748170265.964443218] [tb3_0.planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[planner_server-3] [INFO] [1748170265.994891471] [tb3_0.global_costmap.global_costmap]: Destroying
+[INFO] [velocity_smoother-15]: process has finished cleanly [pid 618386]
+[behavior_server-12] [INFO] [1748170266.012303193] [tb3_1.behavior_server]: Destroying
+[planner_server-11] [INFO] [1748170266.014248259] [tb3_1.planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[INFO] [velocity_smoother-7]: process has finished cleanly [pid 618259]
+[planner_server-11] [INFO] [1748170266.042543382] [tb3_1.global_costmap.global_costmap]: Destroying
+[bt_navigator-13] [INFO] [1748170266.063661130] [tb3_1.bt_navigator]: Destroying
+[INFO] [smoother_server-10]: process has finished cleanly [pid 618376]
+[INFO] [waypoint_follower-14]: process has finished cleanly [pid 618384]
+[bt_navigator-5] [INFO] [1748170266.089369257] [tb3_0.bt_navigator]: Destroying
+[INFO] [waypoint_follower-6]: process has finished cleanly [pid 618257]
+[INFO] [smoother_server-2]: process has finished cleanly [pid 618249]
+[planner_server-3] [INFO] [1748170266.113246094] [tb3_0.planner_server]: Destroying
+[planner_server-11] [INFO] [1748170266.132186966] [tb3_1.planner_server]: Destroying
+[INFO] [behavior_server-4]: process has finished cleanly [pid 618253]
+[INFO] [behavior_server-12]: process has finished cleanly [pid 618380]
+[INFO] [bt_navigator-13]: process has finished cleanly [pid 618382]
+[INFO] [bt_navigator-5]: process has finished cleanly [pid 618255]
+[INFO] [planner_server-3]: process has finished cleanly [pid 618251]
+[INFO] [planner_server-11]: process has finished cleanly [pid 618378]
+[ERROR] [controller_server-9]: process has died [pid 618374, exit code -6, cmd '/opt/ros/humble/lib/nav2_controller/controller_server --ros-args --log-level info --ros-args -r __ns:=/tb3_1 --params-file /tmp/launch_params_wylxnomc -r /tf:=tf -r /tf_static:=tf_static -r cmd_vel:=cmd_vel_nav'].
+[lifecycle_manager-16] [ERROR] [1748170267.596507418] [tb3_1.lifecycle_manager_navigation]: Failed to change state for node: controller_server. Exception: controller_server/get_state service client: async_send_request failed.
+[lifecycle_manager-16] [ERROR] [1748170267.596605757] [tb3_1.lifecycle_manager_navigation]: Failed to bring up all requested nodes. Aborting bringup.
+[lifecycle_manager-8] [ERROR] [1748170267.598249309] [tb3_0.lifecycle_manager_navigation]: Failed to change state for node: controller_server. Exception: controller_server/get_state service client: async_send_request failed.
+[lifecycle_manager-8] [ERROR] [1748170267.598361827] [tb3_0.lifecycle_manager_navigation]: Failed to bring up all requested nodes. Aborting bringup.
+[lifecycle_manager-16] [INFO] [1748170267.656104418] [tb3_1.lifecycle_manager_navigation]: Destroying lifecycle_manager_navigation
+[lifecycle_manager-8] [INFO] [1748170267.660124737] [tb3_0.lifecycle_manager_navigation]: Destroying lifecycle_manager_navigation
+[INFO] [lifecycle_manager-16]: process has finished cleanly [pid 618388]
+[INFO] [lifecycle_manager-8]: process has finished cleanly [pid 618261]
+[ERROR] [controller_server-1]: process has died [pid 618247, exit code -6, cmd '/opt/ros/humble/lib/nav2_controller/controller_server --ros-args --log-level info --ros-args -r __ns:=/tb3_0 --params-file /tmp/launch_params_t0atylzh -r /tf:=tf -r /tf_static:=tf_static -r cmd_vel:=cmd_vel_nav'].
+^C
+biswash@biswash-pc:~/up_work/final_output$ 
+
+

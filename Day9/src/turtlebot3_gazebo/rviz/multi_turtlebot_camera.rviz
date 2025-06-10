@@ -1,0 +1,49 @@
+---
+Visualization Manager:
+  Class: ""
+  Name: Visualization Manager
+  Value: true
+  Enabled: true
+  Displays:
+    - Class: rviz2/Image
+      Name: tb0_0 Camera
+      Value: true
+      Topic: /tb0_0/intel_realsense_r200_depth/image_raw
+      Queue Size: 10
+      Transport Hint: raw
+    - Class: rviz2/Image
+      Name: tb0_1 Camera
+      Value: true
+      Topic: /tb0_1/intel_realsense_r200_depth/image_raw
+      Queue Size: 10
+      Transport Hint: raw
+    - Class: rviz2/Image
+      Name: tb1_0 Camera
+      Value: true
+      Topic: /tb1_0/intel_realsense_r200_depth/image_raw
+      Queue Size: 10
+      Transport Hint: raw
+    - Class: rviz2/Image
+      Name: tb1_1 Camera
+      Value: true
+      Topic: /tb1_1/intel_realsense_r200_depth/image_raw
+      Queue Size: 10
+      Transport Hint: raw
+  Tools:
+    - Class: rviz2/Interact
+      Hide Inactive Objects: true
+  Views:
+    Current:
+      Class: rviz2/Orbit
+      Name: Orbit
+      Value: true
+    Saved: []
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: /tb0_0/odom
+    Frame Rate: 30
+  Window Geometry:
+    X: 0
+    Y: 0
+    Width: 1280
+    Height: 720
